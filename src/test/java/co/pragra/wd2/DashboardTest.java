@@ -2,7 +2,7 @@ package co.pragra.wd2;
 
 import org.testng.annotations.Test;
 
-@Test
+@Test(groups = "smoke")
 public class DashboardTest {
 
     public void tc1(){

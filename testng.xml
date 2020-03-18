@@ -1,9 +1,16 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="PragraTestSuite">
     <test name="frontend">
+      <groups>
+          <run>
+              <include name="regression"></include>
+          </run>
+      </groups>
         <classes>
+            <class name="co.pragra.wd2.LoginTest"></class>
             <class name="co.pragra.wd2.HomeTest"></class>
-<!--            <class name="co.pragra.wd2.LoginTest"></class>-->
+            <class name="co.pragra.wd2.DashboardTest"></class>
+            <class name="co.pragra.wd2.AbcTest"></class>
         </classes>
     </test>
 </suite>

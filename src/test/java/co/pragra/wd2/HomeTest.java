@@ -8,17 +8,17 @@ import org.testng.annotations.Test;
 public class HomeTest {
 
 
-    @Test
+    @Test(groups = {"smoke","regression"} ,dependsOnGroups = "sanity")
     public void tc1(){
         System.out.println( "Hometest -->   Test Case 1");
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void tc2(){
         System.out.println( "Hometest -->   Test Case 2");
     }
 
-    @Test
+    @Test(groups = {"smoke","regression"}, dependsOnGroups = "sanity")
     public void tc3(){
         System.out.println( "Hometest -->   Test Case 3");
     }
