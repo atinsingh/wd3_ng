@@ -1,6 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="PragraTestSuite">
+    <parameter name="browser" value="FIREFOX"></parameter>
     <test name="frontend">
+        <parameter name="browser" value="BLACKFIREFOX"></parameter>
       <groups>
           <run>
               <include name="regression"></include>
@@ -8,7 +10,9 @@
       </groups>
         <classes>
             <class name="co.pragra.wd2.LoginTest"></class>
-            <class name="co.pragra.wd2.HomeTest"></class>
+            <class name="co.pragra.wd2.HomeTest">
+                <parameter name="abc" value="John Doe"></parameter>
+            </class>
             <class name="co.pragra.wd2.DashboardTest"></class>
             <class name="co.pragra.wd2.AbcTest"></class>
         </classes>
